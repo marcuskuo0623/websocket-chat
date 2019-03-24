@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div>
+            <div class="chat-name-block">
+                <div class="chat-name-block no-enter">
+                    <label for="name">輸入你的名字</label>
+                    <input type="text" id="name" placeholder="Your name here...">
+                    <button id="btnName" class="btn-sm btn-default">開始聊天</button>
+                </div>
+                <div class="chat-name-block enter">
+                    <p id="enterUserName"></p>
+                </div>
+            </div>
+
+        </div>
+        <table id="conversation" class="table">
+            <thead>
+            <tr class="d-flex">
+                <th class="col-sm-2"></th>
+                <th class="col-sm-10"></th>
+            </tr>
+            </thead>
+            <tbody id="greetings">
+            </tbody>
+
+        </table>
+        <div style="margin-top: 20px;" class="d-sm-flex align-items-center">
+            <input id="content" type="text" placeholder="傳送訊息" style="width:100vh;"/>
+            <button id="btnMessage" class="btn-sm btn-default align-self-center" disabled style="display: none;">送出
+            </button>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
