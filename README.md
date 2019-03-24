@@ -1,4 +1,5 @@
 # websocket-chat
 Simple WebSocket Chat
 
-local: http://localhost:8080/
+* http://localhost:8080/
+* java -jar ~/develop/websocket-all/websocket-chat/websocket-chat.jar
